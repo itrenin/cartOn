@@ -11,16 +11,16 @@ let time = new Date().toLocaleTimeString().toString()
   return (
     <Tab.Navigator>
       <Tab.Screen
-        name="Main"
+        name="Корзина"
         component={MainScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons name="cart-outline" color={color} size={26} />
           ),
         }}
       />
       <Tab.Screen
-        name="Details"
+        name="Заказы"
         component={DetailsScreen}
         initialParams={{
           date,
@@ -29,7 +29,7 @@ let time = new Date().toLocaleTimeString().toString()
         options={{
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
-              name="account-details"
+              name="view-list"
               color={color}
               size={26}
             />

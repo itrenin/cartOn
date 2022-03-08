@@ -23,7 +23,7 @@ export const ItemList = ({ data }) => {
       <FlatList
         data={data}
         keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => <Text style={styles.item}>{item.name}</Text>}
+        renderItem={({ item }) => <Text style={styles.item}>{item.name}...{item.price}</Text>}
       />
     </View>
   )

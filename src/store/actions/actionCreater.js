@@ -20,8 +20,8 @@ export const loadList = {
   payload: mock.orderItems,
 }
 
-export const addItem = (item) => {
-  const newItem = { type: ADD_ITEM, payload: { id: Date.now(), name: item } }
-  console.log(newItem)
+export const addItem = (item, price) => {
+  const newItem = { type: ADD_ITEM, payload: { id: Date.now(), name: item, price } }
+  // console.log(newItem)
   return newItem
 }

@@ -4,15 +4,23 @@ import { MainScreen } from '../screens/MainScreen'
 import { DetailsScreen } from '../screens/DetailsScreen'
 import { AboutScreen } from '../screens/AboutScreen'
 import { BottomNavigator } from './BottomNavigator'
-const Stack = createNativeStackNavigator()
+// const Stack = createNativeStackNavigator()
+
+// export const AppNavigator = () => {
+//   return (
+//     <NavigationContainer>
+//       <Stack.Navigator initialRouteName="Home">
+//         <Stack.Screen name="Home" component={BottomNavigator} />
+//         <Stack.Screen name="About" component={AboutScreen} />
+//       </Stack.Navigator>
+//     </NavigationContainer>
+//   )
+// }
 
 export const AppNavigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={BottomNavigator} />
-        <Stack.Screen name="About" component={AboutScreen} />
-      </Stack.Navigator>
+      <BottomNavigator />
     </NavigationContainer>
   )
 }
